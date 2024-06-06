@@ -1,0 +1,79 @@
+/* OurWork.css */
+.our-work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+  }
+  
+  .our-work-overlay {
+    position: absolute;
+    top: 350px;
+    background-color: #87CEEB; /* Adjust as needed */
+    border-radius: 20px;
+    width: 95%;
+    height: 48px;
+    z-index: -1;
+  }
+  
+  .our-work-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .our-work-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .our-work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .our-work-button {
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .our-work-overlay {
+      top: 250px;
+    }
+    .our-work-heading {
+        flex-direction: column;
+        text-align: center;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .our-work-content {
+      padding: 10px;
+    }
+    .our-work-heading {
+      flex-direction: column;
+      text-align: center;
+    }
+    .our-work-overlay {
+      top: 200px;
+    }
+  }
+  
